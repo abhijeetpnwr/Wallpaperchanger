@@ -20,6 +20,6 @@ toset = wallpaperlist[wallpaperno]
 
 print toset
 
-command = "gconftool -t string -s /desktop/gnome/background/picture_filename "+toset
+command = "gsettings set org.gnome.desktop.background picture-uri "+toset
 
-print command
+os.system(command)
